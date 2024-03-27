@@ -1,4 +1,5 @@
-<body>
-    <h1>Welcome to laravel 11 </h1>
-    <p>bobby</p>
-</body>
+<x-app-layout>
+    <div>
+        Welcome, to LARA NOTES!
+    </div>
+</x-app-layout>
