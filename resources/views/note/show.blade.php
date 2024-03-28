@@ -3,13 +3,15 @@
         <div class="note-header">
             <h1 class="text-3xl py-4">Note: {{ $note->created_at }}</h1>
             <div class="note-buttons">
+                <a href="{{ route('note.index') }}" class="note-back-button">Back</a>
+
                 <a href="{{ route('note.edit', $note) }}" class="note-edit-button">Edit</a>
                 <form action="{{ route('note.destroy', $note) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button class="note-delete-button">Delete</button>
                 </form>
-                <a href="{{ route('note.index') }}" class="note-back-button">Back</a>
+
             </div>
         </div>
         <div class="note">
@@ -17,5 +19,6 @@
                 {{ $note->note }}
             </div>
         </div>
+
     </div>
 </x-app-layout>

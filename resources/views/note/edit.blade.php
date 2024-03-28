@@ -2,7 +2,7 @@
     <div class="note-container single-note">
         <h1>Edit your note</h1>
         <form action="{{ route('note.update', $note) }}" method="POST" class="note">
-            <textarea name="body" class="note-body">{{ $note->note }}</textarea>
+            <textarea name="body" class="note-body edit-note-body">{{ $note->note }}</textarea>
             @csrf
             {{-- method PUT will override the method POST Because the note.update route is a put route and post method will fail --}}
             @method('PUT')
