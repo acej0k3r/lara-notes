@@ -9,10 +9,21 @@
         <style>
             /* Add your custom styles here */
             /* For example: */
+            html,
             body,
-            html {
+            .bg-gray-100 {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: #030303 !important;
+                background-color: #141414 !important;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+
+
+            .bg-white {
+                background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+                border-color: #2b2e33;
             }
 
             .container {
@@ -20,6 +31,12 @@
                 margin: 0 auto;
                 padding: 40px 20px;
                 text-align: center;
+                width: 100%;
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             h1 {
@@ -45,7 +62,7 @@
             }
 
             .btn:hover {
-                background-color: #3182ce;
+                background-color: #d3d0c5;
             }
         </style>
     </head>

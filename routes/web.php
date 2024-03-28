@@ -30,4 +30,8 @@ Route::middleware('auth')->group(function () {
    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
+Route::fallback(function () {
+   abort(404); // Redirect to 404 page
+});
 require __DIR__ . '/auth.php';
