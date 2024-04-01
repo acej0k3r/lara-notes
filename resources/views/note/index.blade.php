@@ -4,7 +4,7 @@
         <a href="{{ route('note.create') }}" class="new-note-btn">
             <span class="plus">+<span> New Note
         </a>
-        <div class="notes">
+        <div class="notes ">
             @foreach ($notes as $note)
                 <div class="note">
                     <div class="note-body">
